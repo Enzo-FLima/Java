@@ -6,12 +6,13 @@ public class VarPrimitivas {
 
         Scanner teclado = new Scanner(System.in);
 
-        int valor = 3;
-        float nota = 7.4537f;
-        char letra = 'E';
+        System.out.print("Informe o nome do aluno: \n> ");
         String nome = teclado.nextLine();
 
-        System.out.printf("\nA nota do aluno %s é %.4f\n", nome, nota);
+        System.out.printf("Informe a nota do %s: \n> ", nome);
+        float nota = teclado.nextFloat();
+
+        System.out.printf("\nA nota do aluno %s é %.2f\n", nome, nota);
     }
 
 }
